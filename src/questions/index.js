@@ -38,7 +38,6 @@ router.post("/start", async (req, res, next) => {
       _id: uniqid(),
       examDate: new Date(),
       isCompleted: false,
-      totalDuration: 30,
       currentScore: 0,
       questions: []
     };
@@ -46,6 +45,11 @@ router.post("/start", async (req, res, next) => {
     for (let i = 0; i < 5; i++) {
       await chooser();
     }
+    let totalDuration = 0
+     newExam.questions.map((item) => {
+        totalDuration += parseInt(item.duration)
+    })
+    newExam.totalDuration = totalDuration
     examfile.push(newExam);
     fs.writeFileSync(path.join(__dirname, "exams.json"), JSON.stringify(examfile));
     res.send("added");

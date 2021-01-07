@@ -1,13 +1,79 @@
 [
     {
-        "name": "marco",
-        "email": "simonacossailearning@gmail.com",
-        "_id": "36kvt2pckjmuqkfl",
-        "examDate": "2021-01-07T12:53:50.192Z",
+        "name": "Marco",
+        "_id": "36kvt3xckjmx86vc",
+        "examDate": "2021-01-07T14:03:31.656Z",
         "isCompleted": false,
-        "totalDuration": 30,
-        "currentScore": 2,
+        "currentScore": 0,
         "questions": [
+            {
+                "duration": 180,
+                "text": "Cupidatat dolor dolore anim non. Proident veniam mollit culpa ullamco proident ea pariatur amet ipsum. Sint ex eiusmod sit anim nostrud irure et et reprehenderit occaecat deserunt labore velit. Velit commodo magna tempor tempor cillum amet excepteur. Culpa incididunt est nulla sint. Dolore Lorem sunt deserunt tempor adipisicing cillum cupidatat commodo enim nulla.",
+                "img": "https://demo-res.cloudinary.com/image/upload/sample.jpg",
+                "answers": [
+                    {
+                        "text": "ea",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "Lorem",
+                        "isCorrect": true
+                    },
+                    {
+                        "text": "adipisicing",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "proident",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "duration": 60,
+                "text": "Ex commodo minim Lorem aliqua ea pariatur id pariatur do commodo reprehenderit veniam. Et irure minim deserunt ad est. Quis nisi et dolore quis dolore est culpa.",
+                "answers": [
+                    {
+                        "text": "officia",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "nulla",
+                        "isCorrect": true
+                    },
+                    {
+                        "text": "non",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "est",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "duration": 180,
+                "text": "Dolor reprehenderit nulla deserunt sint. Esse qui eiusmod proident id. Ex ea do voluptate laborum dolor velit nisi proident nisi do qui velit ut. Aliqua labore ad in sunt sit. Incididunt amet excepteur amet pariatur voluptate do consequat cupidatat exercitation eiusmod sint. Enim id elit aliqua quis aliqua minim ea. Tempor exercitation magna laborum voluptate veniam tempor duis id amet.",
+                "img": "https://demo-res.cloudinary.com/image/upload/sample.jpg",
+                "answers": [
+                    {
+                        "text": "eiusmod",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "pariatur",
+                        "isCorrect": true
+                    },
+                    {
+                        "text": "mollit",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "nisi",
+                        "isCorrect": false
+                    }
+                ]
+            },
             {
                 "duration": 60,
                 "text": "Excepteur qui duis labore exercitation aute amet fugiat reprehenderit aute aliquip. Dolore labore laborum laborum veniam aliquip qui ad irure in exercitation ipsum non labore. Exercitation incididunt ex ullamco aute laborum irure culpa. Irure qui qui enim elit ullamco.",
@@ -26,128 +92,6 @@
                     },
                     {
                         "text": "veniam",
-                        "isCorrect": false
-                    }
-                ]
-            },
-            {
-                "duration": 180,
-                "text": "Ut dolore ut amet velit laborum sunt exercitation velit et excepteur est. Ad ullamco velit officia nulla esse proident sint labore et. Id reprehenderit eu laboris cupidatat aute est do occaecat. Nulla pariatur aute culpa ullamco velit ullamco id ea voluptate enim in in pariatur.",
-                "answers": [
-                    {
-                        "text": "excepteur",
-                        "isCorrect": false
-                    },
-                    {
-                        "text": "et",
-                        "isCorrect": true
-                    },
-                    {
-                        "text": "sunt",
-                        "isCorrect": false
-                    },
-                    {
-                        "text": "mollit",
-                        "isCorrect": false
-                    }
-                ]
-            },
-            {
-                "duration": 60,
-                "text": "Ullamco anim magna adipisicing ex proident anim nulla duis nostrud Lorem exercitation occaecat. Nulla fugiat est exercitation labore minim id. Ullamco in et laborum sunt exercitation aliquip ut reprehenderit elit Lorem do est incididunt magna. Veniam incididunt velit quis veniam velit proident laborum cupidatat aliquip. Ut consectetur laboris culpa incididunt ad qui. Laboris excepteur officia proident ea proident non ea incididunt elit velit.",
-                "img": "https://demo-res.cloudinary.com/image/upload/sample.jpg",
-                "answers": [
-                    {
-                        "text": "et",
-                        "isCorrect": false
-                    },
-                    {
-                        "text": "et",
-                        "isCorrect": true
-                    },
-                    {
-                        "text": "eu",
-                        "isCorrect": false
-                    },
-                    {
-                        "text": "nisi",
-                        "isCorrect": false
-                    }
-                ]
-            },
-            {
-                "duration": 60,
-                "text": "Cupidatat excepteur sit non id veniam ad do exercitation aute ipsum eu. Fugiat amet ut irure ut nisi ut ad esse sunt. Id tempor quis esse nisi nulla sint aliqua esse eiusmod commodo incididunt aliquip sit.",
-                "answers": [
-                    {
-                        "text": "proident",
-                        "isCorrect": false
-                    },
-                    {
-                        "text": "adipisicing",
-                        "isCorrect": true
-                    },
-                    {
-                        "text": "non",
-                        "isCorrect": false
-                    },
-                    {
-                        "text": "ex",
-                        "isCorrect": false
-                    }
-                ]
-            },
-            {
-                "duration": 120,
-                "text": "Cillum veniam anim enim aliquip sit dolor do tempor nulla. Fugiat excepteur voluptate adipisicing occaecat voluptate sint ex sunt aute ipsum pariatur ad. Labore qui aliqua eu est commodo. Officia dolore consequat sunt esse sit reprehenderit proident qui consectetur ullamco elit est. Veniam dolor ullamco non laboris non.",
-                "img": "https://demo-res.cloudinary.com/image/upload/sample.jpg",
-                "answers": [
-                    {
-                        "text": "non",
-                        "isCorrect": false
-                    },
-                    {
-                        "text": "do",
-                        "isCorrect": true
-                    },
-                    {
-                        "text": "tempor",
-                        "isCorrect": false
-                    },
-                    {
-                        "text": "incididunt",
-                        "isCorrect": false
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "Salvatore",
-        "_id": "36kvtpskjmv9p1l",
-        "examDate": "2021-01-07T13:08:42.632Z",
-        "isCompleted": false,
-        "totalDuration": 30,
-        "currentScore": 3,
-        "questions": [
-            {
-                "duration": 180,
-                "text": "Ut dolore ut amet velit laborum sunt exercitation velit et excepteur est. Ad ullamco velit officia nulla esse proident sint labore et. Id reprehenderit eu laboris cupidatat aute est do occaecat. Nulla pariatur aute culpa ullamco velit ullamco id ea voluptate enim in in pariatur.",
-                "answers": [
-                    {
-                        "text": "excepteur",
-                        "isCorrect": false
-                    },
-                    {
-                        "text": "et",
-                        "isCorrect": true
-                    },
-                    {
-                        "text": "sunt",
-                        "isCorrect": false
-                    },
-                    {
-                        "text": "mollit",
                         "isCorrect": false
                     }
                 ]
@@ -172,9 +116,18 @@
                         "text": "fugiat",
                         "isCorrect": false
                     }
-                ],
-                "givenAnswer": 1
-            },
+                ]
+            }
+        ],
+        "totalDuration": 540
+    },
+    {
+        "name": "Simona",
+        "_id": "36kvt3xckjmx8bad",
+        "examDate": "2021-01-07T14:03:37.381Z",
+        "isCompleted": false,
+        "currentScore": 0,
+        "questions": [
             {
                 "duration": 60,
                 "text": "Excepteur qui duis labore exercitation aute amet fugiat reprehenderit aute aliquip. Dolore labore laborum laborum veniam aliquip qui ad irure in exercitation ipsum non labore. Exercitation incididunt ex ullamco aute laborum irure culpa. Irure qui qui enim elit ullamco.",
@@ -195,8 +148,74 @@
                         "text": "veniam",
                         "isCorrect": false
                     }
-                ],
-                "givenAnswer": 1
+                ]
+            },
+            {
+                "duration": 60,
+                "text": "Sunt elit nisi consectetur officia Lorem cillum ea consectetur ullamco eu. Labore in occaecat est ad consequat non ipsum qui commodo. Sit incididunt nulla eiusmod et dolor id dolor in veniam eu.",
+                "answers": [
+                    {
+                        "text": "nostrud",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "aliquip",
+                        "isCorrect": true
+                    },
+                    {
+                        "text": "enim",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "cillum",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "duration": 180,
+                "text": "Nulla exercitation adipisicing quis id velit dolor anim adipisicing magna et deserunt sint. Consequat voluptate ex eu sint aliquip duis. Dolore aliquip ea irure reprehenderit.",
+                "answers": [
+                    {
+                        "text": "in",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "consectetur",
+                        "isCorrect": true
+                    },
+                    {
+                        "text": "officia",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "excepteur",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "duration": 60,
+                "text": "Non ipsum cupidatat nulla quis. Amet aliqua consequat nostrud aute elit enim aliqua ullamco non laborum. Dolor labore officia reprehenderit ut ea. Nostrud cupidatat velit eu pariatur excepteur deserunt tempor sit amet aliquip. Mollit commodo non occaecat cillum.",
+                "img": "https://demo-res.cloudinary.com/image/upload/sample.jpg",
+                "answers": [
+                    {
+                        "text": "aute",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "reprehenderit",
+                        "isCorrect": true
+                    },
+                    {
+                        "text": "ut",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "tempor",
+                        "isCorrect": false
+                    }
+                ]
             },
             {
                 "duration": 180,
@@ -219,30 +238,8 @@
                         "isCorrect": false
                     }
                 ]
-            },
-            {
-                "duration": 60,
-                "text": "Ullamco anim magna adipisicing ex proident anim nulla duis nostrud Lorem exercitation occaecat. Nulla fugiat est exercitation labore minim id. Ullamco in et laborum sunt exercitation aliquip ut reprehenderit elit Lorem do est incididunt magna. Veniam incididunt velit quis veniam velit proident laborum cupidatat aliquip. Ut consectetur laboris culpa incididunt ad qui. Laboris excepteur officia proident ea proident non ea incididunt elit velit.",
-                "img": "https://demo-res.cloudinary.com/image/upload/sample.jpg",
-                "answers": [
-                    {
-                        "text": "et",
-                        "isCorrect": false
-                    },
-                    {
-                        "text": "et",
-                        "isCorrect": true
-                    },
-                    {
-                        "text": "eu",
-                        "isCorrect": false
-                    },
-                    {
-                        "text": "nisi",
-                        "isCorrect": false
-                    }
-                ]
             }
-        ]
+        ],
+        "totalDuration": 540
     }
 ]
