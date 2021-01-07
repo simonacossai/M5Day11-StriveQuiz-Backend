@@ -72,5 +72,6 @@
     The user can add, edit, remove questions.
     > Handle Time Cap
        
-    Start exam can now receive duration as parameter. The total of questions randomly picked for that exam should not exceed the specified duration
+    Start exam can now receive duration as parameter. 
+    The total of questions randomly picked for that exam should not exceed the specified duration
 */
