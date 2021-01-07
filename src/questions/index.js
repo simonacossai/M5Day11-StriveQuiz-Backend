@@ -128,5 +128,68 @@ router.get("/:id", async (req, res, next) => {
   }
 })
 
+
+
+//get all the questions
+router.get("/", async (req, res, next) => {
+  try {
+    const questionfile = fileReader("questions.json");
+    res.send(questionfile);
+  } catch (error) {
+    console.log(error);
+    next(error);
+  }
+});
+
+
+router.post("/", async (req, res, next) => {
+  try {
+    const questionfile = fileReader("questions.json");
+    const newQuestion = {
+      ...req.body
+    };
+    questionfile.push(newQuestion);
+    fs.writeFileSync(path.join(__dirname, "questions.json"), JSON.stringify(questionfile));
+    res.status(201).send(newQuestion)
+  } catch (error) {
+    console.log(error);
+    next(error);
+  }
+});
+
+router.put("/:index", async(req, res, next)=>{
+  try {
+    const questionfile = fileReader("questions.json");
+    const foundQuestion = questionfile[req.params.index]
+
+    const updatedQuestion = [
+      ...questionfile.slice(0, req.params.index),
+      { ...questionfile[req.params.index], ...req.body },
+      ...questionfile.slice(req.params.index + 1),
+    ]
+    fs.writeFileSync(path.join(__dirname, "questions.json"), JSON.stringify(updatedQuestion));
+  res.send(updatedQuestion)
+  } catch (error) {
+    console.log(error);
+    next(error);
+  }
+})
+
+router.delete("/:index", async(req, res, next)=>{
+  try {
+    const questionfile = fileReader("questions.json");
+    const questionToDelete = questionfile[req.params.index];
+
+    questionfile.splice(req.params.index, 1);
+    fs.writeFileSync(path.join(__dirname, "questions.json"), JSON.stringify(questionfile));
+    res.send("deleted")
+  } catch (error) {
+    console.log(error);
+    next(error);
+  }
+})
+
+
 module.exports = router
+
 
