@@ -41,6 +41,7 @@ router.post("/start", async (req, res, next) => {
       currentScore: 0,
       questions: []
     };
+
     const chooser = randomNoRepeats(questionfile);
     for (let i = 0; i < 5; i++) {
       await chooser();
@@ -50,9 +51,11 @@ router.post("/start", async (req, res, next) => {
         totalDuration += parseInt(item.duration)
     })
     newExam.totalDuration = totalDuration
+    examWithoutAnswers= newExam
     examfile.push(newExam);
     fs.writeFileSync(path.join(__dirname, "exams.json"), JSON.stringify(examfile));
-    res.send("added");
+    examWithoutAnswers.questions.map((v)=>  v.answers.map((e)=> delete e.isCorrect ));
+    res.send(examWithoutAnswers);
   } catch (error) {
     console.log(error);
     next(error);
@@ -78,12 +81,9 @@ router.post("/:id/answer", async (req, res, next) => {
     const examIndex = examfile.findIndex(exam => exam._id === req.params.id)
     const examFound = examfile.find(exam => exam._id === req.params.id)
     if(!examfile[examIndex].questions[req.body.question].givenAnswer){
-    if (examIndex !== -1) {
       const answer = examfile[examIndex].questions[req.body.question].answers[req.body.answer];
       examfile[examIndex].questions[req.body.question].givenAnswer = req.body.answer
-    } else {
-      res.send("Couldn't find this exam");
-    }
+   
       if (answer.isCorrect === true) {
         examFound.currentScore++;
       }
