@@ -83,14 +83,15 @@ router.post("/:id/answer", async (req, res, next) => {
     if(!examfile[examIndex].questions[req.body.question].givenAnswer){
       const answer = examfile[examIndex].questions[req.body.question].answers[req.body.answer];
       examfile[examIndex].questions[req.body.question].givenAnswer = req.body.answer
-   
       if (answer.isCorrect === true) {
         examFound.currentScore++;
+        res.send(true);
+      }else{
+        res.send(false);
       }
       examfile.splice(examIndex, 1);
       examfile.push(examFound)
       fs.writeFileSync(path.join(__dirname, "exams.json"), JSON.stringify(examfile));
-      res.send("added");
     }else{
       res.send("you already answered to this question")
     }
@@ -114,9 +115,12 @@ router.get("/:id", async (req, res, next) => {
     const examFound = examfile.find(
       exam => exam._id === req.params.id
     )
+    examWithoutAnswers= examFound
+    examWithoutAnswers.questions.map((v)=>  v.answers.map((e)=> delete e.isCorrect ));
+
 
     if (examFound) {
-      res.send(examFound)
+      res.send(examWithoutAnswers)
     } else {
       const err = new Error()
       err.httpStatusCode = 404
